@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Backend</title>
+</head>
+<body>
+    <h2>ML Predictor</h2>
+
+    <form method="POST">
+        <input type="number" name="value" required>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if result %}
+        <h3>Result: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
